@@ -1,0 +1,6 @@
+bibentry(bibtype = "Misc",
+         author = "various civil servants",
+         title = "2010 Census Summary File 2",
+         institution = "US Census Bureau",
+         url = "https://www2.census.gov/census_2010/05-Summary_File_2/United_States/",
+         year=2012)

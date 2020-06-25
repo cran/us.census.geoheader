@@ -1,0 +1,15 @@
+3e5e03a1e34bab4d4ec266b1bc6fb601 *DESCRIPTION
+081186a72a049426406ab7429ea07460 *LICENSE
+521d7e56f160eaa0594433bde00a407a *NAMESPACE
+a0afa0ec250e5ad18b9bdba55ca2eab8 *R/uscgh.R
+11e018c867c0188d053287dd9dc11286 *build/vignette.rds
+435d2e1efc0610bd8094493add66865c *inst/CITATION
+b2bcf68f3cf900db075d81ce91963027 *inst/doc/a-tour.html
+d5c6a12c72884f13ff87ae5f9912b6dc *inst/doc/a-tour.html.asis
+e345af1d9de7b5b83b3b25f8ec7cc034 *inst/private/us2010sf2_101_col_usrdsc.csv.gz
+719ae3c336f86fc8fbe24a7243e9bf50 *man/ensure.Rd
+8683d984e268026acdba57a0ddaeb4c1 *man/get.data.Rd
+302f24c7196b729ffb1dac6913b6a998 *man/get.decode.Rd
+ef2019810fd9af7a225296b44bdca728 *man/uscgh.2010.decode.Rd
+137df9f9826093e47b7cd5f917ecf5bd *man/uscgh.2010.sf2.geoheader.Rd
+d5c6a12c72884f13ff87ae5f9912b6dc *vignettes/a-tour.html.asis

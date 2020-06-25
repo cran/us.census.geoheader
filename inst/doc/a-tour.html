@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-06-14 Sun 17:58 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="outline-container-orgc0e93e8" class="outline-2">
+<h2 id="orgc0e93e8">A Short Tour Through Some of This Geographical Header</h2>
+<div class="outline-text-2" id="text-orgc0e93e8">
+</div>
+
+<div id="outline-container-org73f1e22" class="outline-3">
+<h3 id="org73f1e22">sf2.pdf</h3>
+<div class="outline-text-3" id="text-org73f1e22">
+</div>
+<div id="outline-container-orgdc175d7" class="outline-4">
+<h4 id="orgdc175d7"><code>SUMLEV</code></h4>
+<div class="outline-text-4" id="text-orgdc175d7">
+<p>
+The main guide for the "geographic header" data provided by this
+package is the US Census Bureau's sf2.pdf file, which is available
+<a href="https://catalog.data.gov/dataset/census-2000-summary-file-2-sf2">from this page</a>.  In addition, there is some helpful information on the
+Census' bureau's <a href="https://www.census.gov/data/developers/geography.html">view of geography</a>, which includes a pointer to more
+<a href="https://www.census.gov/newsroom/blogs/random-samplings/2014/07/understanding-geographic-relationships-counties-places-tracts-and-more.html">useful articles</a>.
+</p>
+
+<p>
+Chapter 6 of sf2.pdf is the "Data Dictionary".  It lists the columns,
+and provides information on how to interpret each column.  On the top
+of page 6-2, it lists <code>SUMLEV</code>, with an internal link to endnote 2.
+</p>
+
+<p>
+Endnote 2, on page 6-15, contains some text, then contains an internal
+link to "How to Use This Product", Chapter 2 of sf2.pdf.
+</p>
+
+<p>
+Chapter 2 has a section, on page 2-3, on "SUMMARY LEVEL SEQUENCE
+CHART", which includes, again, some text, and another internal link,
+this time to "The summary level sequence chart", which is to
+Chapter 4, "Summary Level Sequence Chart".
+</p>
+
+<p>
+Pages 4-1 through 4-4 of Chapter 4 discuss "State Summary File 2".
+The data in <b>this</b> package is from the "National Summary File 2"; the
+description for this starts on page 4.5.
+</p>
+
+<p>
+The National Summary File 2 appears to have two columns relevant to
+"summary level sequence".  The first is "Geographical component"
+(<code>GEOCOMP</code>) (wait!  We haven't <b>seen</b> that one yet!  patience&#x2026;).
+The second column is "Summary level", which turns out to be our old
+friend, <code>SUMLEV</code>.  A <code>SUMLEV</code> of 000 (is that a string?  an integer?)
+seems to have associated <code>GEOCOMP</code> values of:
+</p>
+<pre class="example">
+00, 89–95,
+A0–A2, C0–C2,
+C7–CT, E0–E2,
+E7–EJ, G0, H0
+</pre>
+<p>
+with a meaning of "United States".  We tentatively conclude that this
+summary level relates to counts for the entire United States rather
+than, e.g., a value of 040, relating to (individual?) states.
+</p>
+
+<p>
+NB: For reasons of space, this package <b>only</b> includes <code>SUMLEV</code> values
+010, 020, 030, 040, and 050.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2a1521c" class="outline-4">
+<h4 id="org2a1521c"><code>GEOCOMP</code></h4>
+<div class="outline-text-4" id="text-org2a1521c">
+<p>
+If we go back to page 6-2 of Chapter 6 ("Data Dictionary"), the
+variable ('column') is the most recently aforementioned <code>GEOCOMP</code>,
+"Geographical Component".  And, this entry points at endnote 3.
+</p>
+
+<p>
+Endnote 3, again on page 6-15, lists a number of <code>GEOCOMP</code> values
+(continuing on to page 6-18), and points again at Chapter 2, "How to
+Use This Product", for further information.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7148cd5" class="outline-4">
+<h4 id="org7148cd5"><code>CHARITER</code></h4>
+<div class="outline-text-4" id="text-org7148cd5">
+<p>
+Once again we go back to page 6-2, where we see "Characteristic
+Iteration", <code>CHARITER</code>, which points us at endnote 4, as well as at
+Appendix H "for a full list of possible iterations" (implying maybe
+not all are used?  At least, not all the time?).
+</p>
+
+<p>
+Endnote 4, on page 6-18, gives some text, and <b>also</b> points at
+Appendix H.
+</p>
+
+<p>
+Appendix H, "Characteristic Iterations", starts off promisingly
+</p>
+<pre class="example">
+This appendix lists the 331 possible iterations for Summary File 2.
+
+</pre>
+<p>
+and, reading on, we see that it encodes demographic ('racial') slices
+through the US population (and that a value of 001 indicates the
+entire population).
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd64a151" class="outline-3">
+<h3 id="orgd64a151">Code book</h3>
+<div class="outline-text-3" id="text-orgd64a151">
+<p>
+Cornell's <a href="https://ciser.cornell.edu/data/data-archive/census-2010-sf2-download-center/">CISER</a> helpfully provides an <a href="https://cisermgmt.cornell.edu/go/pub/2010SF2/DATA_FIELD_DESCRIPTORS.xlsx">Excel spreadsheet</a> <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> describing the columns in the sf2 file
+<b>beyond</b> the geographical header.
+</p>
+
+<p>
+If we included <b>all</b> (3GB zipped, 16GB unzipped!) of sf2 <sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup> rather than just the geographical header,
+we would have occasion to refer to the Code Book .xls file.  But, we
+haven't included all.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7dd5872" class="outline-3">
+<h3 id="org7dd5872">In closing</h3>
+<div class="outline-text-3" id="text-org7dd5872">
+<p>
+Good luck with it!
+</p>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara">I use
+<a href="http://gnumeric.org/">gnumeric</a> to view this file.</div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara">You can
+retrieve us2010.sf2.zip from <a href="https://www2.census.gov/census_2010/05-Summary_File_2/United_States">this web page</a>, should you have bandwidth
+and disk storage.  Better, you can retrieve it from <a href="https://ciser.cornell.edu/data/data-archive/census-2010-sf2-download-center/">CISER</a>, so you'll
+have, e.g., column names.</div></div>
+
+
+</div>
+</div></div>
+</body>
+</html>
